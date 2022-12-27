@@ -1,0 +1,7 @@
+[2022-12-21 15:20:13] Created fine-tune: ft-YzSMpfIHEUwanA6JFyPLJJuQ
+
+Stream interrupted (client disconnected).
+To resume the stream, run:
+
+  openai api fine_tunes.follow -i ft-YzSMpfIHEUwanA6JFyPLJJuQ
+
