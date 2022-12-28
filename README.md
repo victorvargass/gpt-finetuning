@@ -13,7 +13,7 @@
   
   ### 3. Set the API_KEY as an environmental variable:
   ```
-  $ set OPENAI_API_KEY=<YOUR-API-KEY>
+  $ export OPENAI_API_KEY=<YOUR-API-KEY>
   ```
   
   ### 4. Run the following command for generate a prepared file for finetuning process:
