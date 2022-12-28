@@ -7,30 +7,21 @@
 ## How to run
   ### 1. Run the Jupyter Notebook 'finetuning-gpt-example.ipynb'
   
-  ### 2. Create an OpenAI account, and generate an API_TOKEN
-  - https://openai.com/api/login
-  - https://beta.openai.com/account/api-keys
-  
-  ### 3. Set the API_KEY as an environmental variable:
-  ```
-  $ export OPENAI_API_KEY=<YOUR-API-KEY>
-  ```
-  
-  ### 4. Run the following command for generate a prepared file for finetuning process:
+  ### 2. Run the following command for generate a prepared file for finetuning process:
   ```
   $ openai tools fine_tunes.prepare_data -f <LOCAL_FILE>
   # Example:
     $ openai tools fine_tunes.prepare_data -f 'depression.jsonl'
   ```
   
-  ### 5. Create a finetuning with the generated file:
+  ### 3. Create a finetuning with the generated file:
   ```
   $ openai api fine_tunes.create -t <TRAIN_FILE_ID_OR_PATH> -m <BASE_MODEL>
   # Example:
     $ openai api fine_tunes.create -t "depression_prepared.jsonl" -m davinci
   ```
   
-  ### 6. Get the state of your finetuning (could be in process or queue)
+  ### 4. Get the state of your finetuning (could be in process or queue)
   ```
   $ openai api fine_tunes.follow -i <YOUR_FINE_TUNE_JOB_ID>
   Example:
@@ -41,7 +32,7 @@
   $ openai api fine_tunes.list
   ```
   
-  ### 7. Back to the notebook and test your finetuned model
+  ### 5. Back to the notebook and test your finetuned model
 
 ## References
 
